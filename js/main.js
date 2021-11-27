@@ -1,7 +1,7 @@
 // about__slider
 const aboutSlider = new Swiper(".about__slider", {
   // slider for view
-  slidesPerView: 1.3,
+  slidesPerView: 1,
   // active slide in center
 
   // Pagination
@@ -50,21 +50,4 @@ AOS.init({
   mirror: false, // whether elements should animate out while scrolling past them
   anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
 });
-$(function () {
-  let header = $(".header");
-  let hederHeight = header.height(); // вычисляем высоту шапки
-
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 1) {
-      header.addClass("header_fixed");
-      $("body").css({
-        paddingTop: hederHeight + "px", // делаем отступ у body, равный высоте шапки
-      });
-    } else {
-      header.removeClass("header_fixed");
-      $("body").css({
-        paddingTop: 0, // удаляю отступ у body, равный высоте шапки
-      });
-    }
-  });
-});
+d;
