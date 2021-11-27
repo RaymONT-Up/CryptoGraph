@@ -53,8 +53,10 @@ a {
 
   font-weight: 500;
 
+  color: #fff;
   background-color: #3671e9;
 
+  cursor: pointer;
   transition: background-color, color, 0.35s;
   &:hover {
     color: #3671e9;
