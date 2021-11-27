@@ -1,7 +1,7 @@
 // about__slider
 const aboutSlider = new Swiper(".about__slider", {
   // slider for view
-  slidesPerView: 1.3,
+  slidesPerView: 1,
   // active slide in center
 
   // Pagination
