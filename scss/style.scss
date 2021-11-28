@@ -542,3 +542,181 @@
     font-size: 20px;
   }
 }
+//
+// Graph DashBoard + message
+//
+.dashboard {
+  &__inner {
+    padding: 60px 0 120px 0;
+  }
+  &__title {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  &__paragraph {
+    color: #5b5a99;
+    margin-bottom: 15px;
+  }
+  &__back {
+    position: relative;
+    padding-left: 35px;
+    color: #5b5a99;
+    fill: #5b5a99;
+    transition: color, fill, 0.35s;
+    &:hover {
+      color: #3671e9;
+      fill: #3671e9;
+    }
+  }
+  &__back-icon {
+    position: absolute;
+    left: 0;
+    top: -4px;
+    fill: inherit;
+  }
+  &__coin {
+    margin-top: 30px;
+  }
+
+  &__coin {
+  }
+  &__coin-about {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    align-content: center;
+    margin-bottom: 15px;
+  }
+  &__coin-name {
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 700;
+  }
+  &__coin-info {
+    text-align: right;
+  }
+  &__coin-price {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  &__coin-profitability {
+    font-size: 18px;
+    font-weight: 700;
+    &--good {
+      color: #3fb22d;
+    }
+    &--bad {
+      color: #e93535;
+    }
+  }
+  &__coin-graph {
+    margin-bottom: 20px;
+  }
+}
+.chat {
+  background-image: url(../images/about-bg.png);
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  &__inner {
+    padding: 60px 0 100px;
+  }
+  &__title {
+    margin-bottom: 15px;
+
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+  }
+  &__paragraph {
+    font-weight: 500;
+    font-size: 18px;
+
+    text-align: center;
+  }
+  &__info-title {
+    margin-bottom: 25px;
+  }
+  &__list {
+  }
+  &__messages {
+    max-height: 1000px;
+    overflow-y: auto;
+    margin-bottom: 35px;
+    &::-webkit-scrollbar {
+      width: 10px;
+      height: 0;
+    }
+    &::-webkit-scrollbar-track {
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 20px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba(#3671e9, 0.6);
+      border-radius: 10px;
+    }
+    padding: 40px 0 20px;
+  }
+  &__message {
+    margin: 35px 0;
+  }
+
+  &__message-info {
+    margin: 0 0 10px 15px;
+  }
+  &__message-name {
+    &::after {
+      padding: 0 10px;
+      content: " | ";
+    }
+  }
+
+  &__message-paragraph {
+    width: 90%;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #0a0457;
+    background-color: #06052c;
+  }
+
+  &__form-print {
+    width: 100%;
+    height: 225px;
+
+    padding: 20px;
+    border-radius: 15px;
+    color: #fff;
+    border: 1px solid #0a0457;
+    background-color: #06052c;
+
+    resize: none;
+    &::placeholder {
+      color: #fff;
+    }
+    &:active {
+      border: 1px solid #3671e9;
+    }
+    &:focus-visible {
+      outline: 3px solid #3671e9;
+    }
+    &::-webkit-scrollbar {
+      width: 10px;
+      height: 0;
+    }
+    &::-webkit-scrollbar-track {
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 20px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba(#3671e9, 0.6);
+      border-radius: 10px;
+    }
+  }
+  &__form-btn {
+    margin-top: 30px;
+    float: right;
+  }
+}
