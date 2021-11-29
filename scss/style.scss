@@ -121,12 +121,6 @@
     width: 100%;
     margin-bottom: 80px;
   }
-  &__btn {
-  }
-  &__bitcoin {
-  }
-  &__bitcoin-icon {
-  }
 }
 .about {
   background-image: url(../images/about-bg.png);
@@ -579,8 +573,6 @@
     margin-top: 30px;
   }
 
-  &__coin {
-  }
   &__coin-about {
     display: flex;
     justify-content: space-between;
@@ -640,8 +632,7 @@
   &__info-title {
     margin-bottom: 25px;
   }
-  &__list {
-  }
+
   &__messages {
     max-height: 1000px;
     overflow-y: auto;
@@ -718,5 +709,273 @@
   &__form-btn {
     margin-top: 30px;
     float: right;
+  }
+}
+//
+// Coin list
+//
+.coins-big {
+  .coins__inner {
+    padding: 50px 0;
+  }
+  .coins__box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+
+    padding: 0;
+    border-radius: 20px;
+    background: transparent;
+
+    box-shadow: none;
+  }
+  .coins__box-list {
+    margin-left: auto;
+
+    width: 69%;
+    padding: 50px 65px 50px;
+    border-radius: 20px;
+    background: rgba(17, 17, 58, 0.8);
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .coins__list {
+    max-height: 800px;
+    height: 100%;
+    margin: 0;
+  }
+  .coins__aside {
+    margin-right: auto;
+    width: 30%;
+
+    min-height: 600px;
+    max-height: 800px;
+    border-radius: 20px;
+    background: rgba(17, 17, 58, 0.8);
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+.filter {
+  &__form {
+    padding: 30px 25px 20px 25px;
+  }
+  &__title {
+    margin-bottom: 15px;
+
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: uppercase;
+    &-main {
+      font-size: 26px;
+    }
+  }
+  &__search {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  &__search-input {
+    position: relative;
+    width: 100%;
+    padding: 12px 12px;
+    // padding-right: 36px;
+    border: 1px solid rgba(#3671e9, 0.6);
+    border-radius: 16px;
+    color: #fff;
+    background-color: rgba(#3671e9, 0.35);
+    -webkit-appearance: none !important;
+
+    &::placeholder {
+      color: #fff;
+    }
+    &::-ms-clear {
+      width: 0;
+      height: 0;
+      display: none;
+    }
+    &:focus-visible {
+      outline: 1px solid #3671e9;
+    }
+  }
+
+  &__price {
+    margin-bottom: 20px;
+  }
+
+  &__labels {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__label {
+    padding: 6px 12px;
+
+    border-radius: 5px;
+    border: 2px solid rgba(#3671e9, 0.35);
+    span {
+      font-size: 14px;
+    }
+    &::placeholder {
+      color: #fff;
+    }
+    &:focus-visible {
+      outline: 0 solid #3671e9;
+      border: 0 solid transparent;
+    }
+  }
+
+  &__input {
+    color: #fff;
+    padding: 4px;
+    width: 75px;
+    background-color: transparent;
+    border: 0px transparent;
+    border-bottom: 0.5px solid transparent;
+    font-size: 16px;
+
+    &::placeholder {
+      color: #fff;
+    }
+    &:focus-visible {
+      outline: 0 solid #3671e9;
+      border: 0 solid transparent;
+      border-bottom: 0.5px solid #3671e9;
+    }
+  }
+
+  &__slider {
+    cursor: pointer;
+    height: 4px;
+    background-color: transparent;
+    margin-bottom: 15px;
+  }
+  // стилилизация noiSlider
+
+  .noUi-base {
+    background-color: transparent;
+    height: 5px;
+    border-radius: 20px;
+  }
+  .noUi-target {
+    background-color: transparent;
+    border: 1px solid transparent;
+    box-shadow: none;
+  }
+  .noUi-connects {
+    background-color: #1c2e6e;
+
+    border-radius: 20px;
+  }
+  .noUi-connect {
+    background-color: #3671e9;
+
+    border-radius: 20px;
+  }
+  .noui-target {
+    background: rgba(54, 113, 233, 0.3);
+    border-radius: 20px;
+  }
+
+  .noUi-horizontal .noUi-handle {
+    top: -3px;
+    right: -6px;
+    width: 10px;
+    height: 10px;
+    outline: 4px solid #3671e9;
+    border: transparent;
+    border-radius: 50%;
+    box-shadow: 0 0 0 transparent;
+    background-color: #010411;
+
+    cursor: pointer;
+    &::after,
+    &::before {
+      content: none;
+    }
+    &:hover,
+    &:active,
+    &:focus-visible {
+      box-shadow: 0 0 0 transparent;
+    }
+  }
+  // стилилизация radio input
+  &__radios {
+    margin-bottom: 40px;
+  }
+  &__radio-label {
+    display: block;
+    transition: all, 0.45s;
+    cursor: pointer;
+    &:hover {
+      color: #6998f5;
+    }
+    &:hover .filter__radio-cheked {
+      border: 1px solid #3671e9;
+    }
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+  &__radio {
+    display: none;
+    &:checked + .filter__radio-cheked::before {
+      opacity: 1;
+    }
+  }
+  &__radio-cheked {
+    margin-bottom: -4px;
+    margin-right: 5px;
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #1c2e6e;
+
+    border-radius: 50%;
+    transition: border, 0.45s;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 20px;
+      height: 20px;
+
+      border: 1px solid #1c2e6e;
+      border-radius: 50%;
+      background: #010411;
+
+      transition: opacity, 0.45s;
+      opacity: 0;
+    }
+  }
+  &__btn {
+    margin-bottom: 20px;
+    display: block;
+    width: 100%;
+  }
+  &__reset {
+    display: block;
+    padding: 0;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: transparent;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    cursor: pointer;
+    transition: color, 0.4s;
+    &:hover {
+      color: #3671e9;
+    }
+    &:focus-visible {
+      outline: none;
+    }
   }
 }
