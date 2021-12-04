@@ -100,3 +100,8 @@ document.onscroll = function () {
     asideFixed.classList.add("coins__aside--fixed");
   }
 };
+
+// filter burger
+$(".filter__dropdown").click(function (event) {
+  $(".filter__form, .filter__dropdown").toggleClass("active");
+});

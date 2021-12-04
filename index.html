@@ -25,7 +25,7 @@
   </head>
 
   <body>
-    <header class="header">
+    <header class="header header--fixed">
       <div class="container">
         <div class="header__inner">
           <a href="index.html" class="header__logo">
@@ -68,28 +68,36 @@
               />
             </svg>
           </a>
-          <nav class="header__nav">
-            <ul class="header__list">
-              <li class="header__item">
-                <a class="header__link" href="#">About</a>
-              </li>
-              <li class="header__item">
-                <a class="header__link" href="coins.html">Crypto</a>
-              </li>
-              <li class="header__item">
-                <a class="header__link" href="">Message</a>
-              </li>
-              <li class="header__item">
-                <a class="header__link" href="#">Contacts</a>
-              </li>
-            </ul>
-          </nav>
+          <div class="header__content">
+            <nav class="header__nav">
+              <ul class="header__list">
+                <li class="header__item">
+                  <a class="header__link" href="#">About</a>
+                </li>
+                <li class="header__item">
+                  <a class="header__link" href="coins.html">Crypto</a>
+                </li>
+                <li class="header__item">
+                  <a class="header__link" href="">Message</a>
+                </li>
+                <li class="header__item">
+                  <a class="header__link" href="#">Contacts</a>
+                </li>
+              </ul>
+            </nav>
 
-          <div class="header__user">
-            <a class="header__user-login" href="login.html">Login</a>
-            <a class="header__user-register btn" href="registration.html">
-              Register
-            </a>
+            <div class="header__user">
+              <a class="header__user-login" href="login.html">Login</a>
+              <a class="header__user-register btn" href="registration.html">
+                Register
+              </a>
+            </div>
+          </div>
+          <div class="header__burger burger">
+            <div class="burger__line burger__line--1"></div>
+            <div class="burger__line burger__line--2"></div>
+            <div class="burger__line burger__line--3"></div>
+            <div class="burger__line burger__line--4"></div>
           </div>
         </div>
       </div>
@@ -439,10 +447,8 @@
                 <div class="footer__item-title">developers contacts</div>
                 <div class="footer__developers-contact">
                   <div class="footer__developer">
-                    <div class="footer__name">
-                      Programming / design - Andrey
-                    </div>
-                    <div class="footer__developer-link">
+                    <div class="footer__name">Andrey</div>
+                    <div class="footer__developer-links">
                       <a
                         class="footer__developer-link"
                         target="_blank"
@@ -485,7 +491,7 @@
                     </div>
                   </div>
                   <div class="footer__developer">
-                    <div class="footer__name">Layout / design - Eldar</div>
+                    <div class="footer__name">Eldar</div>
                     <div class="footer__developer-links">
                       <a
                         class="footer__developer-link"
@@ -551,5 +557,7 @@
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <!-- main js -->
     <script src="js/main.js"></script>
+    <!-- header -->
+    <script src="js/header-burger.js"></script>
   </body>
 </html>
