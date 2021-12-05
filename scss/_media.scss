@@ -187,6 +187,10 @@
   .about .swiper-button-next {
     right: 36%;
   }
+
+  .chat__messages {
+    max-height: 900px;
+  }
 }
 @media (max-width: 800px) {
   .hero__bitcoin {
@@ -208,6 +212,10 @@
     margin-right: 0;
     margin-left: 0;
   }
+
+  .chat__messages {
+    max-height: 760px;
+  }
 }
 @media (max-width: 680px) {
   .hero__bitcoin {
@@ -218,6 +226,10 @@
   }
   .coins-big .coins__list {
     padding: 50px 30px 50px;
+  }
+
+  .chat__messages {
+    max-height: 660px;
   }
 }
 @media (max-width: 580px) {
@@ -312,6 +324,14 @@
       grid-area: filter__buttons;
     }
   }
+
+  .chat__messages {
+    max-height: 600px;
+  }
+
+  .login__form {
+    padding: 30px;
+  }
 }
 @media (max-width: 450px) {
   .coins-big .coins__list {
@@ -325,10 +345,17 @@
       right: 12px;
     }
   }
+  .chat__messages {
+    max-height: 570px;
+  }
+
+  .login__form {
+    padding: 25px 20px;
+  }
 }
 @media (max-width: 430px) {
   .container {
-    padding: 0 4px;
+    padding: 0 8px;
   }
   .hero__info {
     padding-bottom: 100px;
@@ -358,6 +385,14 @@
   .coins__item-price,
   .coins__item-profitability {
     font-size: 16px;
+  }
+
+  .chat__messages {
+    max-height: 550px;
+  }
+
+  .login__form {
+    padding: 25px 15px;
   }
 }
 @media (max-width: 370px) {
@@ -397,6 +432,14 @@
       right: 6px;
     }
   }
+
+  .chat__messages {
+    max-height: 500px;
+  }
+
+  .login__form {
+    padding: 25px 5px;
+  }
 }
 @media (max-width: 335px) {
   .coins__item-icon {
@@ -404,5 +447,33 @@
     min-height: 36px;
     width: 36px;
     height: 36px;
+  }
+  .chat__messages {
+    max-height: 460px;
+  }
+}
+
+@media (max-height: 750px) {
+  .login__inner {
+    padding-top: 150px;
+    padding-bottom: 20px;
+  }
+}
+@media (max-height: 570px) {
+  .login__inner {
+    padding-top: 250px;
+    padding-bottom: 20px;
+  }
+}
+@media (max-height: 500px) {
+  .login__inner {
+    padding-top: 275px;
+    padding-bottom: 20px;
+  }
+}
+@media (max-height: 450px) {
+  .login__inner {
+    padding-top: 325px;
+    padding-bottom: 20px;
   }
 }
